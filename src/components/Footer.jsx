@@ -6,7 +6,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark text-light mt-4 fixed-bottom">
+    <footer className="bg-dark footer text-light mt-4 fixed-bottom">
       <div className="container py-4">
         <div className="row gy-3">
           {/* <div className="col-md-4">

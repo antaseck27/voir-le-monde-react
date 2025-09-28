@@ -13,6 +13,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navbar{
+  background-color: rgb(58, 115, 117) !important;
+  color: rgb(235, 237, 239) !important;
+  font-weight: 700 !important;
+}
+.footer{
+  background-color: rgb(58, 115, 117) !important;
+  color: rgb(246, 248, 249) !important;
+
+
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -26,9 +38,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-}
-*{
-
 }
 
 h6 {

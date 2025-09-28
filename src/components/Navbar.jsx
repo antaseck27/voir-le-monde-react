@@ -29,7 +29,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Continents
+                Continant
               </a>
             </li>
             <li className="nav-item">
