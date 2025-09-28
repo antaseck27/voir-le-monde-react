@@ -40,22 +40,28 @@
 // };
 
 // export default Pays;
-
-
-
-
-
-
-
 import React from "react";
 
-const Pays = ({ nom, drapeau }) => {
+const Pays = ({ nom, capitale, langue, drapeau, region, population }) => {
   return (
-    <div className="card m-2" style={{ width: "12rem" }}>
+    <div
+      className="card m-3 shadow-sm country-card position-relative"
+      style={{ width: "14rem", height: "18rem", cursor: "pointer", overflow: "hidden" }}
+    >
+      {/* Drapeau + nom */}
       <img src={drapeau} className="card-img-top" alt={nom} />
-      <div className="card-body">
-        <p className="card-text text-center fw-bold">
-          {nom}
+      <div className="card-body text-center">
+        <h5 className="card-title">{nom}</h5>
+      </div>
+
+      {/* Panneau latéral caché */}
+      <div className="country-details p-2">
+        <p className="m-0 text-start">
+          <strong>Capitale :</strong> {capitale} <br />
+          <strong>Région :</strong> {region} <br />
+          <strong>Population :</strong>{" "}
+          {population ? population.toLocaleString() : "N/A"} <br />
+          <strong>Langue :</strong> {langue}
         </p>
       </div>
     </div>
@@ -63,4 +69,46 @@ const Pays = ({ nom, drapeau }) => {
 };
 
 export default Pays;
+
+
+// import React from "react";
+
+// const Pays = ({ nom, capitale, devise, langue, drapeau, region, population }) => {
+//   return (
+//     <div className="card m-3 shadow-sm" style={{ width: "12rem" }}>
+//       <img src={drapeau} className="card-img-top" alt={nom} />
+//       <div className="card-body">
+//         <h5 className="card-title">{nom}</h5>
+//         <p className="card-text">
+//           <strong>Capitale :</strong> {capitale} <br />
+//           <strong>Région :</strong> {region} <br />
+//           <strong>Population :</strong> {population.toLocaleString()} <br />
+//           <strong>Devise :</strong> {devise} <br />
+//           <strong>Langue :</strong> {langue}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Pays;
+
+
+
+// import React from "react";
+
+// const Pays = ({ nom, drapeau }) => {
+//   return (
+//     <div className="card m-2" style={{ width: "12rem" }}>
+//       <img src={drapeau} className="card-img-top" alt={nom} />
+//       <div className="card-body">
+//         <p className="card-text text-center fw-bold">
+//           {nom}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Pays;
 
