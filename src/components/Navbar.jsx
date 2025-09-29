@@ -1,14 +1,18 @@
 import { useState } from "react";
 
-function Navbar() {
+function Navbar({ setCurrentPage }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top ">
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold text-uppercase" href="#">
+        <span
+          className="navbar-brand fw-bold text-uppercase"
+          style={{ cursor: "pointer" }}
+          onClick={() => setCurrentPage("home")}
+        >
           🌍 MondeVisuel
-        </a>
+        </span>
 
         {/* Bouton menu mobile */}
         <button
@@ -23,24 +27,36 @@ function Navbar() {
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <button
+                className="nav-link btn btn-link"
+                onClick={() => setCurrentPage("home")}
+              >
                 Accueil
-              </a>
+              </button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Continant
-              </a>
+              <button
+                className="nav-link btn btn-link"
+                onClick={() => setCurrentPage("continent")}
+              >
+                Continent
+              </button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-               Pays
-              </a>
+              <button
+                className="nav-link btn btn-link"
+                onClick={() => setCurrentPage("pays")}
+              >
+                Pays
+              </button>
             </li>
             <li className="nav-item">
-            <a className="nav-link" href="#">
-              Information
-              </a>
+              <button
+                className="nav-link btn btn-link"
+                onClick={() => setCurrentPage("info")}
+              >
+                Information
+              </button>
             </li>
           </ul>
         </div>

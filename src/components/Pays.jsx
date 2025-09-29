@@ -56,13 +56,13 @@ const Pays = ({ nom, capitale, langue, drapeau, region, population }) => {
 
       {/* Panneau latéral caché */}
       <div className="country-details p-2">
-        <p className="m-0 text-start">
+        <div className="details-content">
           <strong>Capitale :</strong> {capitale} <br />
           <strong>Région :</strong> {region} <br />
           <strong>Population :</strong>{" "}
           {population ? population.toLocaleString() : "N/A"} <br />
           <strong>Langue :</strong> {langue}
-        </p>
+        </div>
       </div>
     </div>
   );
