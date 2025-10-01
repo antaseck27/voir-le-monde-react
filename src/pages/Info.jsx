@@ -14,12 +14,12 @@ function Info() {
         <h1 className="mb-4">ℹ️ À propos de MondeVisuel</h1>
         <p className="lead mb-4">
           MondeVisuel est une application éducative qui vous permet d’explorer les pays 
-          et les continents du monde entier 🌍. 
+          et les continents du monde entier 🌍. <br /><br /> <br /> <br />
         </p>
   
         <div className="row justify-content-center">
           <div className="col-md-6 mb-1">
-            <div className="info-card card shadow-sm">
+            <div className="info-card card shadow-lg">
               <div className="card-body">
                 <h5 className="card-title"> Objectif</h5>
                 <p className="card-text">
@@ -31,7 +31,7 @@ function Info() {
           </div>
   
           <div className="col-md-6 mb-1">
-            <div className="info-card card shadow-sm">
+            <div className="info-card card shadow-lg">
               <div className="card-body">
                 <h5 className="card-title"> Développeur</h5>
                 <p className="card-text">
@@ -43,7 +43,7 @@ function Info() {
           </div>
         </div>
   
-        <p className="mt-4">
+        <p className="mt-5">
           ✉️ Contactez-nous : <a href="mailto:contact@mondevisuel.com">contact@mondevisuel.com</a>
         </p>
       </div>

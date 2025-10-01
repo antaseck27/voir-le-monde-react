@@ -6,9 +6,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark footer text-light mt-4 fixed-bottom">
-      <div className="container py-4">
-        <div className="row gy-3">
+    <footer className="bg-dark footer text-light mt-5">
+      <div className="container pb-5">
+        <div className="row">
           {/* <div className="col-md-4">
             <h5 className="fw-bold mb-2">WorldExplorer</h5>
             <p className="small mb-0">Explorer. Comprendre. Respecter. — Guides, cartes et patrimoines du monde.</p>
@@ -30,7 +30,7 @@ export default function Footer() {
             <p className="small mb-0">+221 77 000 00 00</p>
           </div> */}
 
-          <h6 className="fw-bold mb-2">WorldExplorer</h6>
+          <h6 className="fw-bold ">WorldExplorer</h6>
           <p className="small mb-0">
             Explorer. Comprendre. Respecter. — Guides, cartes et patrimoines du
             monde.

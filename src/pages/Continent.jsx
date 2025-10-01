@@ -60,11 +60,11 @@ function Continent() {
 
       {/* Vue continents */}
       {view === "continents" && (
-        <div className="d-flex flex-wrap justify-content-center py-5">
+        <div className="d-flex flex-wrap justify-content-center py-5 p-3">
           {filteredContinents.map((c, i) => (
             <div
               key={i}
-              className="card m-1    shadow-sm justify-content-center"
+              className="card m-3  shadow-lg justify-content-center"
               style={{ width: "12rem", cursor: "pointer" }}
               onClick={() => {
                 setSelectedRegion(c.name);
@@ -85,7 +85,7 @@ function Continent() {
       {view === "countries" && (
         <>
           <button
-            className="btn btn-secondary mb-3"
+            className="btn btn-light mb-3"
             onClick={() => {
               setView("continents");
               setSearch("");
