@@ -17,7 +17,7 @@ function Info() {
           et les continents du monde entier 🌍. <br /><br /> <br /> <br />
         </p>
   
-        <div className="row justify-content-center">
+        <div className="row justify-content-center g-4">
           <div className="col-md-6 mb-1">
             <div className="info-card card shadow-lg">
               <div className="card-body">
@@ -30,7 +30,7 @@ function Info() {
             </div>
           </div>
   
-          <div className="col-md-6 mb-1">
+          <div className="col-md-6 mb-1 ">
             <div className="info-card card shadow-lg">
               <div className="card-body">
                 <h5 className="card-title"> Développeur</h5>
